@@ -6,7 +6,10 @@ export const metadata = {
   description: "Next.js 15.5.4 with multiple pages and NavBar",
 };
 
-export default function RootLayout({ children }) {
+import { ReactNode } from "react";
+
+// ...existing code...
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
@@ -16,3 +19,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+// ...existing code...
+
